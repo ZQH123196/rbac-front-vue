@@ -142,6 +142,18 @@ export const asyncRoutes = [
       }
     ]
   },
+  {
+    path: '/myview',
+    component: Layout,
+    children: [
+      {
+        path: 'userManage',
+        component: () => import('@/views/myview/userManage'),
+        name: 'Icons',
+        meta: { title: 'Icons', icon: 'icon', noCache: true }
+      }
+    ]
+  },
 
   // {
   //   path: '/permission',
