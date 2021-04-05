@@ -1,0 +1,18 @@
+
+GET /dev-api/rabc/user HTTP/1.1
+Host: localhost:9000
+
+###
+
+GET /dev-api/rabc/treeselect HTTP/1.1
+Host: localhost:9000
+
+###
+
+GET /dev-api/rabc/user/1 HTTP/1.1
+Host: localhost:9000
+
+### 
+
+GET /dev-api/rabc/posts/1 HTTP/1.1
+Host: localhost:9000

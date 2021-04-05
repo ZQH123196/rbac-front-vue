@@ -1,0 +1,286 @@
+{
+    "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+      ],
+    "user": {
+        "total": 2,
+        "data": [
+            {
+                "searchValue": null,
+                "createBy": "admin",
+                "createTime": "2021-03-07 14:38:18",
+                "updateBy": null,
+                "updateTime": null,
+                "remark": "管理员",
+                "params": {},
+                "id": 1,
+                "userId": 1,
+                "deptId": 103,
+                "userName": "admin",
+                "nickName": "若依",
+                "email": "ry@163.com",
+                "phonenumber": "15888888888",
+                "sex": "1",
+                "avatar": "",
+                "salt": null,
+                "status": "0",
+                "delFlag": "0",
+                "loginIp": "127.0.0.1",
+                "loginDate": "2021-03-07T14:38:18.000+0800",
+                "dept": {
+                    "searchValue": null,
+                    "createBy": null,
+                    "createTime": null,
+                    "updateBy": null,
+                    "updateTime": null,
+                    "remark": null,
+                    "params": {},
+                    "deptId": 103,
+                    "parentId": null,
+                    "ancestors": null,
+                    "deptName": "研发部门",
+                    "orderNum": null,
+                    "leader": "若依",
+                    "phone": null,
+                    "email": null,
+                    "status": null,
+                    "delFlag": null,
+                    "parentName": null,
+                    "children": []
+                },
+                "roles": [],
+                "roleIds": null,
+                "postIds": null,
+                "admin": true
+            },
+            {
+                "searchValue": null,
+                "createBy": "admin",
+                "createTime": "2021-03-07 14:38:18",
+                "updateBy": null,
+                "updateTime": null,
+                "remark": "测试员",
+                "params": {},
+                "id": 2,
+                "userId": 2,
+                "deptId": 105,
+                "userName": "ry",
+                "nickName": "若依",
+                "email": "ry@qq.com",
+                "phonenumber": "15666666666",
+                "sex": "1",
+                "avatar": "",
+                "salt": null,
+                "status": "0",
+                "delFlag": "0",
+                "loginIp": "127.0.0.1",
+                "loginDate": "2021-03-07T14:38:18.000+0800",
+                "dept": {
+                    "searchValue": null,
+                    "createBy": null,
+                    "createTime": null,
+                    "updateBy": null,
+                    "updateTime": null,
+                    "remark": null,
+                    "params": {},
+                    "deptId": 105,
+                    "parentId": null,
+                    "ancestors": null,
+                    "deptName": "测试部门",
+                    "orderNum": null,
+                    "leader": "若依",
+                    "phone": null,
+                    "email": null,
+                    "status": null,
+                    "delFlag": null,
+                    "parentName": null,
+                    "children": []
+                },
+                "roles": [],
+                "roleIds": null,
+                "postIds": null,
+                "admin": false
+            }
+        ],
+        "code": 200,
+        "msg": "查询成功"
+    },
+    "user_one": [
+        {
+            "searchValue": null,
+            "createBy": "admin",
+            "createTime": "2021-03-07 14:38:18",
+            "updateBy": null,
+            "updateTime": null,
+            "remark": "管理员",
+            "params": {},
+            "id": 1,
+            "userId": 1,
+            "deptId": 103,
+            "userName": "admin",
+            "nickName": "若依",
+            "email": "ry@163.com",
+            "phonenumber": "15888888888",
+            "sex": "1",
+            "avatar": "",
+            "salt": null,
+            "status": "0",
+            "delFlag": "0",
+            "loginIp": "127.0.0.1",
+            "loginDate": "2021-03-07T14:38:18.000+0800",
+            "dept": {
+                "searchValue": null,
+                "createBy": null,
+                "createTime": null,
+                "updateBy": null,
+                "updateTime": null,
+                "remark": null,
+                "params": {},
+                "deptId": 103,
+                "parentId": null,
+                "ancestors": null,
+                "deptName": "研发部门",
+                "orderNum": null,
+                "leader": "若依",
+                "phone": null,
+                "email": null,
+                "status": null,
+                "delFlag": null,
+                "parentName": null,
+                "children": []
+            },
+            "roles": [],
+            "roleIds": null,
+            "postIds": null,
+            "admin": true
+        },
+        {
+            "searchValue": null,
+            "createBy": "admin",
+            "createTime": "2021-03-07 14:38:18",
+            "updateBy": null,
+            "updateTime": null,
+            "remark": "测试员",
+            "params": {},
+            "id": 2,
+            "userId": 2,
+            "deptId": 105,
+            "userName": "ry",
+            "nickName": "若依",
+            "email": "ry@qq.com",
+            "phonenumber": "15666666666",
+            "sex": "1",
+            "avatar": "",
+            "salt": null,
+            "status": "0",
+            "delFlag": "0",
+            "loginIp": "127.0.0.1",
+            "loginDate": "2021-03-07T14:38:18.000+0800",
+            "dept": {
+                "searchValue": null,
+                "createBy": null,
+                "createTime": null,
+                "updateBy": null,
+                "updateTime": null,
+                "remark": null,
+                "params": {},
+                "deptId": 105,
+                "parentId": null,
+                "ancestors": null,
+                "deptName": "测试部门",
+                "orderNum": null,
+                "leader": "若依",
+                "phone": null,
+                "email": null,
+                "status": null,
+                "delFlag": null,
+                "parentName": null,
+                "children": []
+            },
+            "roles": [],
+            "roleIds": null,
+            "postIds": null,
+            "admin": false
+        }
+    ],
+    "admdiv": {
+        "msg": "操作成功",
+        "code": 200,
+        "data": [
+            {
+                "id": 100,
+                "label": "若依科技",
+                "children": [
+                    {
+                        "id": 101,
+                        "label": "深圳总公司",
+                        "children": [
+                            {
+                                "id": 103,
+                                "label": "研发部门"
+                            },
+                            {
+                                "id": 104,
+                                "label": "市场部门"
+                            },
+                            {
+                                "id": 105,
+                                "label": "测试部门"
+                            },
+                            {
+                                "id": 106,
+                                "label": "财务部门"
+                            },
+                            {
+                                "id": 107,
+                                "label": "运维部门"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 102,
+                        "label": "长沙分公司",
+                        "children": [
+                            {
+                                "id": 108,
+                                "label": "市场部门"
+                            },
+                            {
+                                "id": 109,
+                                "label": "财务部门"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "role": {
+        "msg": "操作成功",
+        "code": 200,
+        "data": [
+            {
+                "searchValue": null,
+                "createBy": null,
+                "createTime": "2021-03-07 14:38:18",
+                "updateBy": null,
+                "updateTime": null,
+                "remark": "普通角色",
+                "params": {},
+                "roleId": 2,
+                "roleName": "普通角色",
+                "roleKey": "common",
+                "roleSort": "2",
+                "dataScope": "2",
+                "menuCheckStrictly": true,
+                "deptCheckStrictly": true,
+                "status": "0",
+                "delFlag": "0",
+                "flag": false,
+                "menuIds": null,
+                "deptIds": null,
+                "admin": false
+            }
+        ]
+    }
+}

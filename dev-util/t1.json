@@ -1,0 +1,44 @@
+{
+    "msg": "操作成功",
+    "code": 200,
+    "data": [
+        {
+            "searchValue": null,
+            "createBy": "admin",
+            "createTime": "2021-03-07 14:38:19",
+            "updateBy": null,
+            "updateTime": null,
+            "remark": "正常状态",
+            "params": {},
+            "dictCode": 6,
+            "dictSort": 1,
+            "dictLabel": "正常",
+            "dictValue": "0",
+            "dictType": "sys_normal_disable",
+            "cssClass": "",
+            "listClass": "primary",
+            "isDefault": "Y",
+            "status": "0",
+            "default": true
+        },
+        {
+            "searchValue": null,
+            "createBy": "admin",
+            "createTime": "2021-03-07 14:38:19",
+            "updateBy": null,
+            "updateTime": null,
+            "remark": "停用状态",
+            "params": {},
+            "dictCode": 7,
+            "dictSort": 2,
+            "dictLabel": "停用",
+            "dictValue": "1",
+            "dictType": "sys_normal_disable",
+            "cssClass": "",
+            "listClass": "danger",
+            "isDefault": "N",
+            "status": "0",
+            "default": false
+        }
+    ]
+}

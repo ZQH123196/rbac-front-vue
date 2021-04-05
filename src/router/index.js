@@ -143,14 +143,14 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/myview',
+    path: '/rbac',
     component: Layout,
     children: [
       {
         path: 'userManage',
-        component: () => import('@/views/myview/userManage'),
-        name: 'Icons',
-        meta: { title: 'Icons', icon: 'icon', noCache: true }
+        component: () => import('@/views/rbac/userManage'),
+        name: 'userManage',
+        meta: { title: 'userManage', icon: 'peoples', noCache: true }
       }
     ]
   },

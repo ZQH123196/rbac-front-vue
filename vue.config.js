@@ -32,6 +32,11 @@ module.exports = {
   devServer: {
     port: port,
     open: true,
+    proxy: {
+      '/dev-api/rabc': {
+        target: 'http://localhost:9000'
+      },
+    },
     overlay: {
       warnings: false,
       errors: true

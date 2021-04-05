@@ -43,10 +43,20 @@ service.interceptors.response.use(
    * You can also judge the status by HTTP Status Code
    */
   response => {
-    const res = response.data
+    let res = response.data
 
+    if (!(res.code instanceof Number)) res.code = parseInt(res.code)
+    if (!res.code) { // 取不到值强制为成功，并设置必备数据 TODO
+      const t = {
+        'msg': '操作成功',
+        'code': 200,
+        'data': res
+      }
+      res = t
+    }
     // if the custom code is not 20000, it is judged as an error.
-    if (res.code !== 20000) {
+    if (!(res.code === 20000 || res.code === 200)) {
+      console.log('error')
       Message({
         message: res.message || 'Error',
         type: 'error',
