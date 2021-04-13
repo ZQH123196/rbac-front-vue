@@ -143,6 +143,18 @@ export const asyncRoutes = [
     ]
   },
   {
+    path: '/sftp',
+    component: Layout,
+    children: [
+      {
+        path: 'sftp',
+        component: () => import('@/views/sftp/sftp'),
+        name: 'Sftp 页面',
+        meta: { title: 'Icons', icon: 'icon', noCache: true }
+      }
+    ]
+  },
+  {
     path: '/rbac',
     component: Layout,
     children: [

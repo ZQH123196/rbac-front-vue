@@ -2,7 +2,7 @@
 
 安装：
 npm i --registry https://registry.npm.taobao.org
-> 不要使用 cnpm。
+> 不要使用 cnpm。--force 强制覆盖。
 
 
 
