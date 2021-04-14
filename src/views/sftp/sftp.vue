@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import request from "../../utils/request"
+import request from "../../utils/request";
+import axios from "axios";
 
 // 递归休整数据
 function Map2List(map) {
@@ -89,12 +90,39 @@ export default {
             console.log("treeObj", treeObj);
             // 如果是文件夹就展开，其他类型都下载
             if (dataObj.type === "DIRECTORY") {
-              // do nothing
+                // do nothing
             } else {
-              // download xxx
-              request.get()
+                // download xxx
+                request.get();
+                axios({
+                    url: "http://localhost:8080/sftp/download",
+                    method: "post",
+                    responseType: "blob",
+                })
+                    .then(function (res) {
+                        console.log("res", res)
 
-              console.log("download xxx");
+                        const { data, headers } = res
+                        var blob = new Blob([data], {
+                            type: headers["content-type"],
+                        });
+                        console.log("headers", headers)
+
+                        const fileName = headers['content-disposition'].replace(/\w+;filename=(.*)/, '$1')
+                        var aElement = document.createElement("a");
+                        var href = window.URL.createObjectURL(blob); //创建下载的链接
+                        aElement.href = href;
+                        aElement.download = fileName; // 下载后文件名
+                        aElement.style.display = 'none'; // 不显示
+                        document.body.appendChild(aElement);
+                        aElement.click(); // 点击下载
+                        document.body.removeChild(aElement); // 下载完成移除元素
+                        window.URL.revokeObjectURL(href); // 释放掉blob对象
+                    })
+                    .catch(function (err) {
+                        console.error(`获取下载文件出错：${err}`);
+                    });
+                console.log("download xxx");
             }
         },
     },

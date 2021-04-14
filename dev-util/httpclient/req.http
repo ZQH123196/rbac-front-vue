@@ -16,3 +16,12 @@ Host: localhost:9000
 
 GET /dev-api/rabc/posts/1 HTTP/1.1
 Host: localhost:9000
+
+
+### sftp
+
+POST /sftp/getList HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{}
