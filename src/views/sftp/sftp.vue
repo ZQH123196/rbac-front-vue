@@ -93,20 +93,16 @@ export default {
                 // do nothing
             } else {
                 // download xxx
-                request.get();
                 axios({
                     url: "http://localhost:8080/sftp/download",
                     method: "post",
                     responseType: "blob",
                 })
                     .then(function (res) {
-                        console.log("res", res)
-
                         const { data, headers } = res
                         var blob = new Blob([data], {
                             type: headers["content-type"],
                         });
-                        console.log("headers", headers)
 
                         const fileName = headers['content-disposition'].replace(/\w+;filename=(.*)/, '$1')
                         var aElement = document.createElement("a");
@@ -116,6 +112,7 @@ export default {
                         aElement.style.display = 'none'; // 不显示
                         document.body.appendChild(aElement);
                         aElement.click(); // 点击下载
+                        console.log("aElement", aElement)
                         document.body.removeChild(aElement); // 下载完成移除元素
                         window.URL.revokeObjectURL(href); // 释放掉blob对象
                     })
