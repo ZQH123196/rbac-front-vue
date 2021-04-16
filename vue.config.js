@@ -31,10 +31,14 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     port: port,
-    open: true,
+    open: false,
     proxy: {
       '/dev-api/rabc': {
         target: 'http://localhost:9000'
+      },
+      '/dev-api/sftp': {
+        target: 'http://localhost:9000',
+        pathRewrite: {"^/dev-api" : ""}
       },
     },
     overlay: {
